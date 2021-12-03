@@ -1,0 +1,85 @@
+<!-- Create new set of IDs and Classes ans use the script to switch to those for DM-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samar's Portfolio</title>
+    <link id="stylesheet" rel="stylesheet" href="css/mycss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+    <header>
+        <h1>Samar Karnani <br>Virtual Worlds Engineer</h1>
+        <nav>
+        <div id="NavBar">
+            <ul>
+                <li ><a href="#Bio">Bio</a></li>
+                <li ><a href="#Resume">Resume</a></li>
+                <li ><a href="#Portfolio">Projects</a></li>
+                <li ><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+
+    </header>
+    <button id="DMbutton" onclick="switchColours()">Toggle dark mode</button>
+    <main>
+        <div class="grid">
+
+            <section id="Bio">
+                <img src="media/Me.png" alt="Me">
+                <h2>Bio</h2>
+                <p>I am a Creative Developer and UI Designer from Bombay, India with experience in Unity and Unreal Engines. I enjoy facing complex coding problems because they force me to think about a solution outside the box. My persistence, when it comes to tricky problems, is one of my strengths due to my lack of appreciation towards giving up.</p>
+            </section>
+
+            <section id="Resume">
+                <iframe src="media/Samar.Karnani%20Resume.pdf" id="iframe"></iframe>
+            </section>
+
+            <section id="Portfolio">
+
+                <article class="PlaceHolderProject">
+                    <h2>PEW-PEW-PEW</h2>
+                    <br>
+                    <p>PEW-PEW-PEW! is a side scrolling shooter game with various weapons and different enemies.The world of Dun was a peaceful one, filled with joy and prosperity. Then one day the people from the world on Tim attacked. The lives of the people of Dun and their kin are in your hands...
+                    <br> Blast through the enemies and rule the skies with your state of the art flying Doughnut equipped with the all new Coffee Bean shooter and a rocket launcher. Their fritters are small and quick but not strong enough to take more than one hit!</p>
+                    <img src="media/PEWPEWPEW.PNG" alt="game screenshot" class="FloatRight">
+                    <a href="https://people.rit.edu/srk7473/235/Project3/index.html">Game</a>
+                </article>
+
+                <article class="PlaceHolderProject">
+                    <h2>COVID-19 Tracker</h2>
+                    <br>
+                    <p>The COVID-19 Tracker website uses two APIs to return relevant informationto the user. It uses the RESTcounties API to display general country data like population, timezones, flag, etc. 
+                        <br> It then takes the country's alpha-3 code and the date specified and calls the COVID tracker API, displaying the country's COVID related policy data as well as cases.
+                    </p>
+                    <img src="media/COVID.PNG" alt="Website screenshot" class="FloatRight">
+                    <a href="https://people.rit.edu/srk7473/235/Project2/">Go to website</a>
+                </article>
+
+                <article class="PlaceHolderProject">
+                    <h2>Project 3</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod eveniet maxime nihil sit placeat enim consequatur aperiam inventore commodi. Alias, ipsam aspernatur a quae dolor consequuntur magnam ab eveniet?</p>
+                    <img src="media/construction.gif" alt="Item under construction." class="FloatRight">
+                </article>
+
+            </section>
+
+            <section id="Contact">
+                <h2>Contact Information</h2>
+
+                <a href="mailto:srk7473@rit.edu" >Email: srk7473@rit.edu</a>
+                <p>Phone: +1(585) 498-6930 / +91 7208049950</p>
+                <a href="https://www.linkedin.com/in/samar-karnani-55b2a017b/" >LinkedIn: Samar Karnani</a>
+            </section>
+        </div>
+    </main>
+
+    <script src="scripts/DarkMode.js"></script>
+</body>
+</html>

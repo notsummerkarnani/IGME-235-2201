@@ -1,0 +1,242 @@
+body{
+    background-color: #090A0B ;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: .1em;
+    color: #B5FFE1;
+}
+
+h1{
+    color: #18F2B2;
+}
+
+header{
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+
+h2{
+    padding: 0 10px;;
+}
+.grid{
+    margin: 0 auto;
+    justify-content: center;
+    display: inline-grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: .75fr .25fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "Bio Resume"
+      "Contact Resume"
+      "Projects Projects"
+      "Projects Projects";
+    
+}
+
+#NavBar{
+    margin: auto;
+}
+
+ul{
+    width: 48vw;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+    border-radius: 10px;
+    background-color: #05000E
+}
+
+li{
+    width: 12vw;;
+}
+
+a{
+    font-size: larger;
+    transition: 0.2s ease-in-out;
+}
+
+a:link, a:visited {
+    flex-direction: row;
+    background-color: #05000E;
+    color: #B5FFE1;
+    font-weight: bold;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+  
+a:hover, a:active {
+    background-color: #18F2B2;
+    color: #0F0326;
+    transform: scale(1.1);
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+iframe{
+    width: 95%;
+    height: 95%;
+    justify-content: center;
+    padding: 10px;
+}
+
+#Bio{
+    background-color: #05000E;
+    grid-area: Bio;
+    width: 100%;
+    text-align: left;
+    border-radius: 10px;
+}
+
+#Bio>img{
+    max-width: 80%;
+    display: block;
+    margin:auto;
+}
+
+#Bio>h2{
+    max-width: 500px;
+    margin: 0 auto;
+}
+#Resume{
+    background-color: #05000E;
+    grid-area: Resume;
+    float: right;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#Portfolio{
+    grid-area: Projects;
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#Contact{
+    background-color: #05000E;
+    grid-area:Contact;
+    width: 100%;
+    line-height: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+p{
+    padding: 0 10px;
+    padding-bottom: 5px;
+    line-height: 2rem;
+    max-width: 500px;
+    letter-spacing: .07em;
+    margin: auto;}
+
+main{
+    width: 66vw;
+    margin: auto;
+}
+
+.PlaceHolderProject{
+    background-color: #05000E;
+    border-radius: 10px;
+}
+
+.PlaceHolderProject>p{
+    display: inline-block;
+}
+
+.PlaceHolderProject>h2{
+    display: inline-block;
+}
+
+.FloatRight{
+    float: right;
+    max-width: 100%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+footer{
+    padding-left: 10px;
+    max-width: 100px;
+    background-color: #05000E;
+    font-weight: bold;
+    margin: auto;
+    border-radius: 10px;
+}
+
+iframe{
+    border: 0;
+}
+
+#DMbutton{
+    float: right;
+    text-align: right;
+    font-size: large;
+    position: sticky;
+    right: 20px;
+    top: 0;
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    background-color: #05000E;
+    color: #B5FFE1;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:800px){
+
+    ul{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    li{
+        width: 95%;
+    }
+
+    .grid{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin: auto;
+    }
+
+    .PlaceHolderProject{
+        margin: 10px auto;
+    }
+
+    main{
+        width: auto;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    #Resume{
+        margin: auto;
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .NavBar{
+        margin: 0 auto;
+        padding: 0;
+    }
+
+}
+
+
+
+  
+  

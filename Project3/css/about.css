@@ -1,0 +1,80 @@
+html{
+    background-color: #05000e;
+    color: aliceblue;
+    max-width: 95vw;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Introduction Banner";
+}
+
+#Introduction{
+    grid-area: Introduction;
+}
+
+#Banner{
+    grid-area: Banner;
+}
+
+img{
+    max-width: 40vw;
+    margin: 10px;
+}
+
+#Mockups{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navbar{
+    grid-area: NavBar;
+    margin: 20px auto;
+    display: flex;
+    width: 900px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+a{
+    font-size: larger;
+    transition: 0.2s ease-in-out;
+    width: 10vw;
+}
+
+a:link, a:visited {
+    flex-direction: row;
+    background-color: #B5FFE1;
+    color: black;
+    font-weight: bold;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+  
+a:hover, a:active {
+    background-color: #18F2B2;
+    color: #0F0326;
+    transform: scale(1.1);
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 50px;
+    margin: 15 auto;
+    text-align: center;
+}
+
+#sources{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+

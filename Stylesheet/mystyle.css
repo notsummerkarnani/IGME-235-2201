@@ -1,0 +1,58 @@
+html{line-height: 1.1em;}
+
+        body{background-color: rgb(5, 5, 5);
+            margin: 0 auto;
+            width: 15in;}
+
+        h1  {font-size: 40px;
+            color: rgb(50, 0,50);
+            font-family: 'Staatliches', cursive;
+            line-height: 2em;
+            text-align: center;}
+            
+        .navbar {background-color:black;
+        overflow: hidden;
+        }
+        
+        .navbar a {
+        float: left;
+        color: rgb(200, 200, 200);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+        
+        .navbar a:hover {background-color: rgb(200, 200, 200);
+        color: black;
+        }
+        
+        .navbar a.active {background-color: rgb(50, 0,50);
+        color: rgb(200, 200, 200);
+        }
+        
+        #BioData   {font-size: 30px;
+            line-height: 1.3em;
+            padding-left: 50px;
+            padding-bottom: 100px;
+            max-width: 50vw;
+        }
+        
+        img{max-width: 4in;
+            float: left;
+            padding: 50px;
+            }
+
+        h2{font-size: 35px;
+            color: rgb(50, 0,50);
+            line-height: 2em;
+            padding-left: 50px;
+            padding-top: 50px;
+            max-width: 50vw;
+        }
+
+        #Bio{
+            margin: auto;
+            font-family: 'Staatliches', cursive;
+            color: rgb(50, 0,50);
+        }

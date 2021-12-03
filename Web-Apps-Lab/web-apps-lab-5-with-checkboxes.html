@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Web Apps-6</title>
+	<style>
+		body{
+			font-family:sans-serif;
+		}
+		#colorform{
+			background-color:#dfecdf;
+			color: #111;
+			padding:1em;width:400px;
+		}
+		#colorform p#info{
+			background-color:white;
+			color: black;
+			width:300px;
+			height:100px;
+			padding:.5em;
+		}
+		
+		#colorform legend{ 
+			font-weight:bold;
+			font-size:1.2em;
+		}
+	</style>
+</head>
+<body>
+
+<div id="colorform">
+	<legend>Choose your favorite color!</legend>
+	<p><input type="checkbox" name="colorGroup" id="colorGroupRed" value="red" onchange="Tentative(this)"/> Red</p>
+	<p><input type="checkbox" name="colorGroup" id="colorGroupGreen" value="green" onchange="Tentative(this)"/> Green</p>
+	<p><input type="checkbox" name="colorGroup" id="colorGroupBlue" value="blue" onchange="Tentative(this)"/> Blue</p>
+	<p><button id="colorButton" type="button" onclick="SubmitClick()">Submit</button></p>
+	<p id="info"></p>
+</div>
+
+<script>
+/* Write your code here! */
+
+let selectedColour = []
+
+function Tentative(input){
+    //console.log("selected")
+	if(input.checked != false){
+		selectedColour.push(input.value)
+	}
+	else{
+		//console.log('else')
+		selectedColour.splice(selectedColour.indexOf(input.value),1)
+	}
+	document.querySelector("#info").innerHTML = 'You have selected ' + arrayToString(selectedColour)
+	
+	if(selectedColour.length==0)
+	{
+		document.querySelector("#info").innerHTML = ''	
+	}
+}
+
+function SubmitClick(){
+    //console.log("Submitted")
+    if(selectedColour.length != 0){
+        document.querySelector("legend").style.color = selectedColour[Math.floor(Math.random()*selectedColour.length)]
+        document.querySelector("#info").innerHTML = "Your FINAL CHOICE is "+arrayToString(selectedColour)
+    }
+	else{
+		document.querySelector("#info").innerHTML = ''	
+	}
+    
+}
+
+function arrayToString(array){
+	if(array.length>0){
+		let output = array[0];
+		for (let i =1; i<array.length; i++) {
+			output += ` and ${array[i]}`
+		}
+		output +="!"
+		return output;
+	}
+	return ''
+}
+
+</script>
+</body>
+</html>

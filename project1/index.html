@@ -1,0 +1,80 @@
+<!-- Create new set of IDs and Classes ans use the script to switch to those for DM-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samar's Portfolio</title>
+    <link id="stylesheet" rel="stylesheet" href="css/mycss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+    <header>
+        <h1>Samar Karnani <br>Virtual Worlds Engineer</h1>
+        <nav>
+        <div id="NavBar">
+            <ul>
+                <li ><a href="#Bio">Bio</a></li>
+                <li ><a href="#Resume">Resume</a></li>
+                <li ><a href="#Portfolio">Projects</a></li>
+                <li ><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+
+    </header>
+    <button id="DMbutton" onclick="switchColours()">Toggle dark mode</button>
+    <main>
+        <div class="grid">
+
+            <section id="Bio">
+                <img src="media/Me.png" alt="Me">
+                <h2>Bio</h2>
+                <p>I am a Creative Developer and UI Designer from Bombay, India with experience in Unity and Unreal Engines. I enjoy facing complex coding problems because they force me to think about a solution outside the box. My persistence, when it comes to tricky problems, is one of my strengths due to my lack of appreciation towards giving up.</p>
+            </section>
+
+            <section id="Resume">
+                <iframe src="media/Samar.Karnani%20Resume.pdf" id="iframe"></iframe>
+            </section>
+
+            <section id="Portfolio">
+
+                <article class="PlaceHolderProject">
+                    <h2>Project 1</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod eveniet maxime nihil sit placeat enim consequatur aperiam inventore commodi. Alias, ipsam aspernatur a quae dolor consequuntur magnam ab eveniet?</p>
+                    <img src="media/construction.gif" alt="Item under construction." class="FloatRight">
+                </article>
+
+                <article class="PlaceHolderProject">
+                    <h2>Project 2</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod eveniet maxime nihil sit placeat enim consequatur aperiam inventore commodi. Alias, ipsam aspernatur a quae dolor consequuntur magnam ab eveniet?</p>
+                    <img src="media/construction.gif" alt="Item under construction." class="FloatRight">
+                </article>
+
+                <article class="PlaceHolderProject">
+                    <h2>Project 3</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod eveniet maxime nihil sit placeat enim consequatur aperiam inventore commodi. Alias, ipsam aspernatur a quae dolor consequuntur magnam ab eveniet?</p>
+                    <img src="media/construction.gif" alt="Item under construction." class="FloatRight">
+                </article>
+
+            </section>
+
+            <section id="Contact">
+                <h2>Contact Information</h2>
+
+                <a href="mailto:srk7473@rit.edu" >Email: srk7473@rit.edu</a>
+                <p>Phone: +1(585) 498-6930 / +91 7208049950</p>
+                <a href="https://www.linkedin.com/in/samar-karnani-55b2a017b/" >LinkedIn: Samar Karnani</a>
+            </section>
+        </div>
+    </main>
+
+    <script src="scripts/DarkMode.js"></script>
+</body>
+</html>

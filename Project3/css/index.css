@@ -1,0 +1,49 @@
+html{
+    background-color: #05000e;
+}
+
+body{
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.navbar{
+    grid-area: NavBar;
+    margin: 20px auto;
+    display: flex;
+    width: 900px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+a{
+    font-size: larger;
+    transition: 0.2s ease-in-out;
+    width: 10vw;
+}
+
+a:link, a:visited {
+    flex-direction: row;
+    background-color: #B5FFE1;
+    color: black;
+    font-weight: bold;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+  
+a:hover, a:active {
+    background-color: #18F2B2;
+    color: #0F0326;
+    transform: scale(1.1);
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+canvas{
+    border: 2px solid #18F2B2;
+    margin: 0 auto;
+}

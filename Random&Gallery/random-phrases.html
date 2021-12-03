@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="random.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <title>Random phrases HW</title>
+</head>
+<body>
+    <header>
+        <h1>Random Quotes from <em>The Mandalorian</em></h1>
+    </header>
+    
+    <button onclick="DisplayQuote()">Display Quote</button>
+
+    <div id="container">
+        <img id="bckgrndimg" src="images/Mando.jpg" alt="Mandalorian">
+        <div id="Dynamic">
+            <blockquote></blockquote>
+        </div>
+    </div>
+        
+    <footer>
+        <h2>Samar Karnani</h2>
+    </footer>
+
+    <script>
+        let phrases = ["'I can bring you in warm, or I can bring you in cold.'<br> <footer>-The Mandalorian</footer>",
+                        "'I will help you. I have spoken.'<br><footer>-Kuiil</footer>",
+                        "'I like those odds.'<br><footer>-The Mandalorian</footer>",
+                        "'SOOGAA! (EGG!)' <br><footer>-Jawas</footer>",
+                        "'This is the way.' <br><footer>-The Armourer</footer>",
+                        "'Bad news. You can’t live here anymore.'<br><footer>-The Mandalorian</footer>",
+                        "'Would anyone care for some tea?'<br><footer>-IG-11</footer>",
+                        "'You are a clan of two.'<br><footer>-The Armourer</footer>",
+                        "*Cute baby noises* <br><footer>-The Child</footer>"]
+        
+        function DisplayQuote(){
+            document.querySelector("blockquote").innerHTML = phrases[Math.floor(Math.random()*phrases.length)]
+        }
+        DisplayQuote()
+    </script>
+</body>
+</html>

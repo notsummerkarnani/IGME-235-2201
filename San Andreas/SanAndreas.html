@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA San Andreas</title>
+    <style>
+        
+        body
+            {background-color: black;}
+        
+        @font-face 
+            {font-family: pricedown;
+            src: url(fonts/pricedown.ttf);}
+        
+        @font-face 
+            {font-family: diploma;
+            src: url(fonts/diploma.ttf);}
+        
+        #paragraphBox
+            {max-width: 1000px;
+            letter-spacing: 2px;
+            font-weight: normal;
+            font-size: 35px;
+            margin: auto;
+            line-height: 1.1em;
+            padding-left: 100px;
+            display:block;
+            font-family: pricedown;
+            -webkit-text-stroke: 1px white;}
+
+        #h1
+            {font-size: 60px;
+            text-align: center;
+            font-family: diploma;
+            color: white;
+            letter-spacing: 2px;}
+
+        #wallpaper
+            {float: left;
+            max-width: 4in;
+            margin-left: 1in;}
+
+        #h2
+            {font-size: 50px;
+            margin-left: 400px;
+            text-align:left;
+            font-family: diploma;
+            color: white;
+            letter-spacing: 2px;}
+
+        #h31
+            {max-width: 1000px;
+            font-size: 35px;
+            margin-left: 150px;
+            margin-bottom: 0;
+            text-align:left;
+            font-family: pricedown;
+            line-height: 1em;
+            letter-spacing: 2px;
+            font-weight: normal;
+            -webkit-text-stroke: 1px white;}
+
+        #h32
+            {max-width: 1000px;
+            font-size: 35px;
+            margin: auto;
+            margin-bottom: 0;
+            padding-left: 100px;
+            text-align:left;
+            font-family: pricedown;
+            line-height: 1em;
+            letter-spacing: 2px;
+            font-weight: normal;
+            -webkit-text-stroke: 1px white;}
+        
+        #Publishing
+            {max-width: 1000px;
+            font-size: 30px;
+            margin: auto;
+            padding-left: 100px;
+            display:block;
+            line-height: 1em;
+            font-family: pricedown;
+            color: white;
+            letter-spacing: 2px;}
+
+        #AddList
+            {max-width: 1000px;
+            font-size: 30px;
+            margin: 0;
+            padding: 0 100px 0 150px;
+            display:block;
+            line-height: 1em;
+            font-family: pricedown;
+            color: white;
+            letter-spacing: 2px;}
+
+        #DriveBy
+            {float: right;
+            max-width: 400px;
+            margin-right: 300px;}
+        
+        .Block
+            {margin: 150px 0 0 0;
+            align-items: center;}
+            
+        #IGNQuote
+            {color: white;
+            font-family: pricedown;
+            line-height: 1.1em;
+            font-size: 25px;
+            letter-spacing: 2px;
+            margin: 50px auto 0 0;
+            background-color:rgb(36, 36, 36);}
+
+        footer
+            {text-align: right;}
+
+        #footer
+            {color: white;
+            font-family: "pricedown";
+            line-height: 1.1em;
+            font-size: 25px;
+            letter-spacing: 2px;}
+
+        .button 
+           {border: none;
+           font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: rgb(36, 36, 36);
+            text-align: center;
+            font-size: 25px;
+            margin-right: 100px;
+            float: right;}
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+    <h1 id="h1">Grand theft Auto: San Andreas</h1>
+    </header>
+
+    <hr>
+    <br>
+
+<div>
+    <main>
+    <h2 id="h2">Description</h2>
+    <br>
+
+    <aside>
+
+        <button class="button" onclick="ChangeFont()">Change font</button>
+
+        <script>
+            function ChangeFont() 
+            {
+                if(document.getElementById("Publishing").style.fontFamily != "Arial, Helvetica, sans-serif")
+                    {document.getElementById("Publishing").style.fontFamily = "Arial, Helvetica, sans-serif" ;
+                    document.getElementById("AddList").style.fontFamily = "Arial, Helvetica, sans-serif" ;
+                    document.getElementById("paragraphBox").style.fontFamily = "Arial, Helvetica, sans-serif" ;
+                    document.getElementById("paragraphBox").style.webkitTextStroke = "0";
+                    document.getElementById("paragraphBox").style.color = "white";
+                    document.getElementById("IGNQuote").style.fontFamily = "Arial, Helvetica, sans-serif" ;
+                    document.getElementById("footer").style.fontFamily = "Arial, Helvetica, sans-serif" ;
+                    document.getElementById("h1").style.fontFamily = "Arial, Helvetica, sans-serif" ;
+                    document.getElementById("h2").style.fontFamily = "Arial, Helvetica, sans-serif" ;
+                    document.getElementById("h31").style.fontFamily = "Arial, Helvetica, sans-serif" ;
+                    document.getElementById("h31").style.webkitTextStroke = "0";
+                    document.getElementById("h31").style.color = "white";
+                    document.getElementById("h32").style.fontFamily = "Arial, Helvetica, sans-serif" ;
+                    document.getElementById("h32").style.webkitTextStroke = "0";
+                    document.getElementById("h32").style.color = "white";}
+                else
+                    {document.getElementById("Publishing").style.fontFamily = "pricedown" ;
+                    document.getElementById("AddList").style.fontFamily = "pricedown" ;
+                    document.getElementById("paragraphBox").style.fontFamily = "pricedown" ;
+                    document.getElementById("paragraphBox").style.webkitTextStroke = "1px white";
+                    document.getElementById("paragraphBox").style.color = "black";
+                    document.getElementById("IGNQuote").style.fontFamily = "pricedown" ;
+                    document.getElementById("footer").style.fontFamily = "pricedown" ;
+                    document.getElementById("h1").style.fontFamily = "diploma" ;
+                    document.getElementById("h2").style.fontFamily = "diploma" ;
+                    document.getElementById("h31").style.fontFamily = "pricedown" ;
+                    document.getElementById("h31").style.webkitTextStroke = "1px white";
+                    document.getElementById("h31").style.color = "black"
+                    document.getElementById("h32").style.fontFamily = "pricedown" ;
+                    document.getElementById("h32").style.webkitTextStroke = "1px white";
+                    document.getElementById("h32").style.color = "black";}
+            }
+        </script>
+
+    </aside>
+    
+    <img src="Images/Wallpaper.jpg" alt="A picture of the game" id="wallpaper">
+    <p id="paragraphBox">The events of the game take place in the early 1990's. The player takes control of Carl Johnson (C.J.), who had moved to Liberty City in order to distance itself from his past as a member of a gang in his home city, San Andreas. But the past catches up with him in a way he had not imagined: he finds out that his mother was killed by a rival gang. He goes back to San Andreas to attend her funeral. Realizing how corrupted local police is, seeing how his relatives and friends need him, determined to avenge his mother's death, C. J. has no other choice but revert to his old ways.</p>
+    <br>
+    <h3 id="h32">Publishing information</h3>
+    <ul id="Publishing">
+        <li>Published by:<a href="https://www.rockstargames.com/">Rockstar Games, Inc.</a></li>
+        <li>Developed by: Rockstar North Ltd. </li>
+        <li>Platforms: Playstation, XBOX, Windows, Mac, etc.</li>
+        <li>Release: October 26, 2004</li>
+    </ul>
+    </main>
+</div>
+
+<br>
+<br>
+
+
+    <img src="Images/DriveBy.jpg" alt="Another image of the game" id="DriveBy">
+<div class="Block">
+<br>
+<br>
+<h3 id="h31">Additional Information</h3>
+    <ul id="AddList">
+        <li>Genre: Racing/Driving/Action </li>
+        <li>Perspective: Behind View</li>
+        <li>Gameplay: Shooter</li>
+        <li>Present Day Successor:<a href="https://www.rockstargames.com/V/">Grand Theft Auto V</a></li>
+    </ul>
+    <blockquote id= "IGNQuote" cite="https://www.ign.com/articles/2005/11/18/grand-theft-auto-san-andreas-special-edition">What really stands out for me, though, is the absolutely kick-ass soundtrack and voice acting. Boasting a cast that includes Samuel L. Jackson and Chris Penn as Officers Tenpenney and Polaski, James Woods as Mike Toreno, and Charlie Murphy as a self-absorbed pimp named Jizzy, the talent available here is top notch. <br>
+    <footer>-<a href="https://www.ign.com/articles/2005/11/18/grand-theft-auto-san-andreas-special-edition">Imagine Games Network (IGN)</a></footer></blockquote>
+</div>
+<br>
+<hr>
+<footer id="footer">Source: <a href="https://www.mobygames.com/game/grand-theft-auto-san-andreas">Mobygames.com/GTASanAndreas</a></footer>
+</body>
+</html>

@@ -1,0 +1,132 @@
+html{
+    background-color: #222222;
+    letter-spacing: .1em;
+    font-size: large;
+    font-family: 'Mukta', sans-serif;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    background-color: #111111;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 0px 5px;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+#policyData{
+    max-width: 90%;
+    margin: 0 auto;
+    display:  grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    text-align: center;
+    background-color: #222222;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#countryData{
+    max-width: 50vw;
+    margin: 10px auto;
+    background-color: #222222;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#PolicyResultBox{
+    height: 250px;
+    overflow: auto;
+}
+
+#covidDataBox{
+    margin: 10px auto;
+    background-color: #222222;
+    padding: 5px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+#covidData{
+    display:  grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+}
+
+.widgets{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "country flag"
+    "dateType flag"
+    "date flag"
+    "button flag";
+    margin: 0 auto;
+    max-width: 90vw;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: #111111;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+#Country{
+    grid-area:country;
+}
+
+#datePicker{
+    grid-area:date;
+}
+
+#dateTypePicker{
+    grid-area:dateType;
+}
+
+#searchButton{
+    grid-area:button;
+}
+
+#Flag{
+    grid-area:flag;
+    margin: 15px;
+}
+
+#Flag>img{
+    width: 100%;
+}
+
+header{
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+    color: aliceblue;
+}
+
+#status{
+    max-width: 70vw;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    background-color: #111111;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.widgets>button{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+  
+.widgets>button:hover, .widgets>button:active {
+    transform: scale(1.1);
+    font-weight: bolder;
+    border-radius: 10px;
+}
+

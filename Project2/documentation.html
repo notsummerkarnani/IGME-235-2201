@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentaton</title>
+</head>
+<body>
+    <header>
+        <h1>Documentation</h1>
+        <h3>Website: <a href="https://people.rit.edu/srk7473/235/Project2/">2020 Covid Tracker</a></h3>
+        <h3>Samar Karnani, IGME 235</h3>
+    </header>
+
+    <hr>
+
+    <main>
+        <div id="APILinks">
+            <h2>APIs</h2>
+            <ol>
+                <li>RestCountries: <a href="https://restcountries.eu/">API link</a></li>
+                <br>
+                <li>CovidTracker: <a href="https://covidtracker.bsg.ox.ac.uk/about-api">API link</a></li>
+            </ol>
+        </div>
+        
+        <br>
+
+        <div id="content">
+            <h2>Process</h2>
+            <p>Initially, I wanted to make a covid tracker that would take a Country's Alpha 3 code and a date as input and then return information. I later realised that it would require effort for the user to find the country alpha 3 code so i chose to add the restcountries API</p>
+            <br>
+            <p>Now the page first searches for the country data using the RestCountries and then displays that. It then uses the country's alpha 3 code which is returned from the RestCountries object and the date(s) provided by the user and looks for thr covid data and policy data for the country.</p>
+            <br>
+            <p>As soon as the RestCountries API finds the country data it sets the Name and Flag variables in the local storage to get the next time the user returns.</p>
+        </div>
+
+        <div id="validators">
+            <h2>Validators (Both links lead to the validation of the content on my banjo page)</h2>
+            <ul>
+                <li>HTML validator: <a href="https://html5.validator.nu/?doc=https%3A%2F%2Fpeople.rit.edu%2Fsrk7473%2F235%2FProject2%2F">Project 2 HTML Validation Link</a></li>
+                <br>
+                <li>CSS validator: <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpeople.rit.edu%2Fsrk7473%2F235%2FProject2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Project 2 CSS Validation Link</a></li>
+            </ul>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <h2>I think I put in enough effort for an A</h2>
+    </footer>
+</body>
+</html>

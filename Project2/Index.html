@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+ 	<title>Covid Tracker</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="scripts/main.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+	<h1>2020 COVID-19 Tracker</h1>
+</header>
+<main>
+	<div class="widgets">
+		<div id="Country">
+			<br>
+			<label for="searchterm">Country</label>
+			<input id="searchterm" type="text" size="20" autofocus value="USA"/>
+		</div>
+		
+		<div id="Flag">
+			<img src="https://restcountries.eu/data/usa.svg" alt="Flag">
+		</div>
+
+		<div id="dateTypePicker">
+			<label for="dateRange">Search using Date Range</label>
+			<input name="datetype" type="radio" id="dateRange"/>
+			<br><br>
+			<label for="dateSpec">Search using a Specific Date</label>
+			<input name="datetype" type="radio" id="dateSpec" checked/>
+		</div>
+
+		<div id="datePicker">
+			<label for="Date">Date </label>
+			<input type='date' id='Date' value="2020-01-01" min="2020-01-01" max="2020-11-20"/>
+		</div>
+
+		<button type="button" id="searchButton">Find COVID country data!<br /></button>
+	</div>
+
+	<div id="status">Ready to Search!</div>
+
+	<hr>
+
+	<div id="content">
+		<p>No data yet!</p>
+	</div>
+</main>
+<hr>
+
+<footer>
+	<a href="https://people.rit.edu/srk7473/235/Project2/documentation.html">Documentation Page</a>
+</footer>
+
+</body>
+</html>
